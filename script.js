@@ -36,7 +36,9 @@ buttonStart.addEventListener('click', function() {
 
             if (seconds == 0 && minutes == 0) {
                 clearInterval(timerId);
-                timerItem.innerHTML = '25:00';
+                //timerItem.innerHTML = '25:00';
+                minutes = '25';
+                seconds = '00';
                 buttonStart.textContent = 'start';
             };
 
